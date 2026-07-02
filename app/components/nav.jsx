@@ -11,17 +11,15 @@ const LANGUAGES = [
 ];
 
 export default function Nav() {
-
   const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // ✅ new state for mobile menu
   const { t, i18n } = useTranslation();
-
-
 
   const currentLang = LANGUAGES.find((l) => l.code === i18n.language) || LANGUAGES[0];
 
   return (
     <div>
-      <header className="flex flex-wrap sm:justify-start  w-full py-3 bg-bluec border-b border-gray-200">
+      <header className="flex flex-wrap sm:justify-start w-full py-3 bg-bluec border-b border-gray-200">
         <nav className="max-w-[1360px] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
           <a
             className="sm:order-1 flex-none text-xl font-semibold text-third focus:outline-none focus:opacity-80"
@@ -31,7 +29,6 @@ export default function Nav() {
           </a>
 
           <div className="sm:order-3 flex items-center gap-x-2">
-
             {/* Language switcher */}
             <div className="relative">
               <button
@@ -73,16 +70,22 @@ export default function Nav() {
             </div>
 
             {/* Mobile toggle */}
-            
+            <button
+              type="button"
+              onClick={() => setMenuOpen((prev) => !prev)} // ✅ toggle mobile menu
+              className="sm:hidden p-2"
+            >
+              {menuOpen ? <X /> : <Menu />}
+            </button>
           </div>
 
           <div
             id="navbar-menu"
             className={`overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2 ${
-              open ? "block" : "hidden"
+              menuOpen ? "block" : "hidden" // ✅ use menuOpen instead of undefined open
             }`}
           >
-           
+            {/* Your nav links go here */}
           </div>
         </nav>
       </header>
