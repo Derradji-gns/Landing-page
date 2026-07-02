@@ -69,22 +69,22 @@ export default function Reviews() {
               key={review.name}
               data-aos="fade-up"
               data-aos-delay={i * 100}
-              className="flex flex-col justify-between p-6 rounded-2xl bg-muted border border-bluec shadow-sm hover:shadow-md transition-shadow"
+              className="flex flex-col justify-between p-6 rounded-2xl bg-muted border-2 border-third shadow-sm hover:shadow-md transition-shadow"
             >
               <div>
                 <Stars rating={review.rating} />
-                <p className="mt-4 text-muted-foreground-2 leading-relaxed">
+                <p className="mt-4 text-muted-foreground-2 text-bluec leading-relaxed">
                   "{review.quote}"
                 </p>
               </div>
 
-              <div className="flex items-center gap-3 mt-6 pt-6 border-t border-line-2">
+              <div className="flex items-center gap-3 mt-6 pt-6 border-t border-third">
                 <div className="flex justify-center items-center size-10 rounded-full bg-third text-white text-sm font-semibold shrink-0">
                   {review.initials}
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">{review.name}</p>
-                  <p className="text-xs text-muted-foreground-2">{review.role}</p>
+                  <p className="text-sm font-semibold text-bluec text-foreground">{review.name}</p>
+                  <p className="text-xs text-bluec text-muted-foreground-2">{review.role}</p>
                 </div>
               </div>
             </div>
