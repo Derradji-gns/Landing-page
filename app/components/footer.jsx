@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
           <div className="col-span-full hidden lg:col-span-1 lg:block">
-            <a className="flex-none font-semibold text-xl text-foreground focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">Brand</a>
+            <a className="flex-none font-semibold text-xl text-third text-foreground focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">Shiny Boutique</a>
             <p className="mt-3 text-xs text-white sm:text-sm text-muted-foreground-2">
               © 2026 Preline Labs.
             </p>

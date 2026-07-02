@@ -167,7 +167,7 @@ export default function Carousel({
             handleSlideClick={handleSlideClick} />
         ))}
       </ul>
-      <div className="absolute flex justify-center w-full top-[calc(100%+1rem)]">
+      <div className="absolute text-third flex justify-center w-full top-[calc(100%+1rem)]">
         <CarouselControl
           type="previous"
           title="Go to previous slide"
