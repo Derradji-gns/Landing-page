@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "brand": "Shiny Boutique",
+    "landing": "الرئيسية",
+    "account": "الحساب",
+    "work": "أعمالنا",
+    "blog": "المدونة"
+  },
+  "hero": {
+    "badge": "اكتشف مجموعاتنا الجديدة",
+    "titlePrefix": "مرحباً بك في",
+    "titleHighlight": "Shiny Boutique",
+    "titleSuffix": "حيث يلتقي الأناقة باللمعان",
+    "subtitle": "يقدم لك Shiny Boutique أحدث صيحات الموضة مع تجربة تسوق إلكتروني سلسة",
+    "cta": "تسوق الآن!"
+  },
+  "services": {
+    "eyebrow": "خدماتنا",
+    "title": "كل ما تححتاجينه من أجل تسوق مريح",
+    "fastDelivery": {
+      "title": "توصيل سريع",
+      "desc": "شحن موثوق يصل مباشرة إلى بابك."
+    },
+    "exclusiveOffers": {
+      "title": "عروض حصرية",
+      "desc": "خصومات للأعضاء فقط ووصول مبكر للمنتجات الجديدة."
+    },
+    "payments": {
+      "title": "دفع آمن",
+      "desc": "دفع آمن عبر بوابات دفع موثوقة."
+    }
+  },
+  "collections": {
+    "eyebrow": "المجموعات",
+    "title": "عناية تجعلك تتألقين",
+    "exploreButton": "اكتشف المزيد",
+    "slides": {
+      "skinCare": "العناية بالبشرة",
+      "moisturizing": "لوسيونات مرطبة",
+      "hairCare": "كريمات الشعر",
+      "shampoos": "الشامبوهات"
+    }
+  },
+  "reviews": {
+    "eyebrow": "آراء العملاء",
+    "title": "يحبها عملاؤنا",
+    "verifiedBuyer": "مشتري موثّق"
+  },
+  "footer": {
+    "copyright": "© 2026 Shiny Boutique.",
+    "product": "المنتج",
+    "pricing": "الأسعار",
+    "changelog": "سجل التحديثات",
+    "docs": "التوثيق",
+    "download": "تحميل",
+    "company": "الشركة",
+    "aboutUs": "من نحن",
+    "blog": "المدونة",
+    "careers": "وظائف",
+    "hiring": "نحن نوظف",
+    "customers": "العملاء",
+    "newsroom": "غرفة الأخبار",
+    "sitemap": "خريطة الموقع"
+  }
+}

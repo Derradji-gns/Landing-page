@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "brand": "Shiny Boutique",
+    "landing": "Accueil",
+    "account": "Compte",
+    "work": "Travaux",
+    "blog": "Blog"
+  },
+  "hero": {
+    "badge": "Découvrez nos nouvelles collections",
+    "titlePrefix": "Bienvenue chez",
+    "titleHighlight": "Shiny Boutique",
+    "titleSuffix": "Là où le style rencontre l'éclat",
+    "subtitle": "Shiny Boutique vous apporte les dernières tendances avec une expérience d'achat en ligne fluide",
+    "cta": "Achetez maintenant !"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "pour une expérience d'achat fluide et sereine.",
+    "fastDelivery": {
+      "title": "Livraison rapide",
+      "desc": "Une livraison fiable directement à votre porte."
+    },
+    "exclusiveOffers": {
+      "title": "Offres exclusives",
+      "desc": "Réductions réservées aux membres et accès anticipé aux nouveautés."
+    },
+    "payments": {
+      "title": "Paiements sécurisés",
+      "desc": "Paiement sécurisé avec des passerelles de confiance."
+    }
+  },
+  "collections": {
+    "eyebrow": "Collections",
+    "title": "Des soins qui vous font briller",
+    "exploreButton": "Découvrir",
+    "slides": {
+      "skinCare": "Soins de la peau",
+      "moisturizing": "Lotions hydratantes",
+      "hairCare": "Crèmes capillaires",
+      "shampoos": "Shampooings"
+    }
+  },
+  "reviews": {
+    "eyebrow": "Témoignages",
+    "title": "Approuvé par nos clients",
+    "verifiedBuyer": "Acheteur vérifié"
+  },
+  "footer": {
+    "copyright": "© 2026 Shiny Boutique.",
+    "product": "Produit",
+    "pricing": "Tarifs",
+    "changelog": "Journal des modifications",
+    "docs": "Documentation",
+    "download": "Télécharger",
+    "company": "Entreprise",
+    "aboutUs": "À propos",
+    "blog": "Blog",
+    "careers": "Carrières",
+    "hiring": "Nous recrutons",
+    "customers": "Clients",
+    "newsroom": "Actualités",
+    "sitemap": "Plan du site"
+  }
+}

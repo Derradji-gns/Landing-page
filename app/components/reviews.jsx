@@ -3,25 +3,23 @@
 import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const reviews = [
   {
     name: "Amira Belkacem",
-    role: "Verified Buyer",
     initials: "AB",
     rating: 5,
     quote: "The quality completely exceeded what I expected for the price. Shipping was fast and everything arrived exactly as pictured.",
   },
   {
     name: "Sofia Martinez",
-    role: "Verified Buyer",
     initials: "SM",
     rating: 5,
     quote: "My third order from Shiny Boutique and every single piece has been a favorite. Customer service is genuinely lovely too.",
   },
   {
     name: "Jade Thompson",
-    role: "Verified Buyer",
     initials: "JT",
     rating: 4,
     quote: "Really happy with my purchase. The only reason it's not five stars is I wish there were more size options.",
@@ -45,6 +43,7 @@ function Stars({ rating }) {
 }
 
 export default function Reviews() {
+  const { t } = useTranslation();
 
   useEffect(() => {
     AOS.init();
@@ -56,10 +55,10 @@ export default function Reviews() {
 
         <div className="text-center mb-12">
           <p className="text-sm font-semibold uppercase tracking-widest text-third mb-2">
-            Testimonials
+            {t("reviews.eyebrow")}
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-bluec">
-            Loved by our customers
+            {t("reviews.title")}
           </h1>
         </div>
 
@@ -84,7 +83,7 @@ export default function Reviews() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-bluec text-foreground">{review.name}</p>
-                  <p className="text-xs text-bluec text-muted-foreground-2">{review.role}</p>
+                  <p className="text-xs text-bluec text-muted-foreground-2">{t("reviews.verifiedBuyer")}</p>
                 </div>
               </div>
             </div>

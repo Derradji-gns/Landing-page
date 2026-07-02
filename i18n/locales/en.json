@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "brand": "Shiny Boutique",
+    "landing": "Landing",
+    "account": "Account",
+    "work": "Work",
+    "blog": "Blog"
+  },
+  "hero": {
+    "badge": "Explore our new collections",
+    "titlePrefix": "Welcome to",
+    "titleHighlight": "Shiny Boutique",
+    "titleSuffix": "Where Style Meets Shine",
+    "subtitle": "Shiny Boutique brings the latest trends to your fingertips with a seamless online shopping experience",
+    "cta": "Shop Now!"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "smooth, worry-free shopping experience",
+    "fastDelivery": {
+      "title": "Fast Delivery",
+      "desc": "Reliable shipping straight to your door."
+    },
+    "exclusiveOffers": {
+      "title": "Exclusive Offers",
+      "desc": "Members-only discounts and early access to new arrivals."
+    },
+    "payments": {
+      "title": "Hand to Hand Payments",
+      "desc": "Safe checkout with trusted payment gateways."
+    }
+  },
+  "collections": {
+    "eyebrow": "Collections",
+    "title": "Care that makes you shine",
+    "exploreButton": "Explore Component",
+    "slides": {
+      "skinCare": "Skin Cares",
+      "moisturizing": "Moisturizing lotions",
+      "hairCare": "Hair creams",
+      "shampoos": "Shampoos"
+    }
+  },
+  "reviews": {
+    "eyebrow": "Testimonials",
+    "title": "Loved by our customers",
+    "verifiedBuyer": "Verified Buyer"
+  },
+  "footer": {
+    "copyright": "© 2026 Shiny Boutique.",
+    "product": "Product",
+    "pricing": "Pricing",
+    "changelog": "Changelog",
+    "docs": "Docs",
+    "download": "Download",
+    "company": "Company",
+    "aboutUs": "About us",
+    "blog": "Blog",
+    "careers": "Careers",
+    "hiring": "We're hiring",
+    "customers": "Customers",
+    "newsroom": "Newsroom",
+    "sitemap": "Sitemap"
+  }
+}
