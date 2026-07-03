@@ -70,23 +70,10 @@ export default function Nav() {
             </div>
 
             {/* Mobile toggle */}
-            <button
-              type="button"
-              onClick={() => setMenuOpen((prev) => !prev)} // ✅ toggle mobile menu
-              className="sm:hidden p-2"
-            >
-              {menuOpen ? <X /> : <Menu />}
-            </button>
+            
           </div>
 
-          <div
-            id="navbar-menu"
-            className={`overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2 ${
-              menuOpen ? "block" : "hidden" // ✅ use menuOpen instead of undefined open
-            }`}
-          >
-            {/* Your nav links go here */}
-          </div>
+          
         </nav>
       </header>
     </div>

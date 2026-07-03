@@ -64,15 +64,7 @@ export default function Footer() {
               </div>
 
               {/* Social Brands */}
-              <div className="space-x-4">
-                <a className="inline-block text-muted-foreground-1 hover:text-foreground focus:outline-hidden focus:text-foreground" href="#" aria-label="Instagram">
-                  <svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" />
-                    <circle cx="12" cy="12" r="4" />
-                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-                  </svg>
-                </a>
-              </div>
+              
               {/* End Social Brands */}
             </div>
             {/* End Col */}

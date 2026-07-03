@@ -1,6 +1,7 @@
 "use client";;
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState, useRef, useId, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Slide = ({
   slide,
@@ -112,12 +113,17 @@ const Slide = ({
 const CarouselControl = ({
   type,
   title,
-  handleClick
+  handleClick,
+  isRTL
 }) => {
+  // In LTR the "previous" arrow is rotated to point left and "next" points right.
+  // In RTL, "forward" is visually to the left, so the rotation logic must flip.
+  const shouldRotate = isRTL ? type === "next" : type === "previous";
+
   return (
     <button
       className={`w-10 h-10 flex items-center mx-2 justify-center bg-white text-third  border-3 border-transparent rounded-full focus:border-third focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
-        type === "previous" ? "rotate-180" : ""
+        shouldRotate ? "rotate-180" : ""
       }`}
       title={title}
       onClick={handleClick}>
@@ -130,6 +136,8 @@ export default function Carousel({
   slides
 }) {
   const [current, setCurrent] = useState(0);
+  const { i18n } = useTranslation();
+  const isRTL = i18n.dir() === "rtl";
 
   const handlePreviousClick = () => {
     const previous = current - 1;
@@ -156,7 +164,9 @@ export default function Carousel({
       <ul
         className="absolute flex mx-[-4vmin] transition-transform duration-1000 ease-in-out"
         style={{
-          transform: `translateX(-${current * (100 / slides.length)}%)`,
+          transform: `translateX(${
+            (isRTL ? 1 : -1) * current * (100 / slides.length)
+          }%)`,
         }}>
         {slides.map((slide, index) => (
           <Slide
@@ -171,9 +181,14 @@ export default function Carousel({
         <CarouselControl
           type="previous"
           title="Go to previous slide"
-          handleClick={handlePreviousClick} />
+          handleClick={handlePreviousClick}
+          isRTL={isRTL} />
 
-        <CarouselControl type="next" title="Go to next slide" handleClick={handleNextClick} />
+        <CarouselControl
+          type="next"
+          title="Go to next slide"
+          handleClick={handleNextClick}
+          isRTL={isRTL} />
       </div>
     </div>
   );
